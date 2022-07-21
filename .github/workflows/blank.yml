@@ -4,6 +4,4 @@ on: workflow_dispatch
 
 jobs:
   terraform: 
-    uses: "mentoriaiac/cicd_centralizado/.github/workflows/terraform_valida_modulo.yaml@v1"
-    with: 
-      secrets: ${{ secrets.GITHUB_TOKEN }}
+    uses: "mentoriaiac/cicd_centralizado/.github/workflows/terraform_valida_modulo.yaml@main"
