@@ -6,4 +6,4 @@ jobs:
   terraform: 
     uses: "mentoriaiac/cicd_centralizado/.github/workflows/terraform_valida_modulo.yaml@main"
     with:
-      working_directory: "./instance" 
+      working_directory: "./Instance" 
