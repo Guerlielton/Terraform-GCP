@@ -41,3 +41,4 @@ resource "google_compute_firewall" "cluster1" {
     ports    = ["80", "443"]
   }
 }
+
