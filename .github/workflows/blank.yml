@@ -3,5 +3,7 @@ name: "Terraform Valida Modulo"
 on: workflow_dispatch
 
 jobs:
-  terraform:
+  terraform: 
     uses: "mentoriaiac/cicd_centralizado/.github/workflows/terraform_valida_modulo.yaml@v1"
+    with: 
+      secret: ${{ secrets.GITHUB_TOKEN }}
