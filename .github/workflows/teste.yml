@@ -8,4 +8,4 @@ jobs:
     with:
       aws_region: "us-east-1"
       tf_workspace: "default"
-	    gh_personal_token: ${{ secrets.GH_PERSONAL_TOKEN }} 
+      gh_personal_token: ${{ secrets.GH_PERSONAL_TOKEN }} 
