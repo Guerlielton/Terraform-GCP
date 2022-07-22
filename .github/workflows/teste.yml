@@ -1,0 +1,11 @@
+name: "Terraform Executa Modulo"
+
+on: workflow_dispatch
+  
+jobs:
+  terraform:
+    uses: "Guerlielton/cicd_centralizado/.github/workflows/terraform_executa_modulo_aws.yaml@feat/terraform-download-private-modules"
+    with:
+      aws_region: "us-east-1"
+      tf_workspace: "default"
+	    gh_personal_token: ${{ secrets.GH_PERSONAL_TOKEN }} 
