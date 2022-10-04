@@ -8,6 +8,7 @@ jobs:
     with:
       plan: true
       apply: true
-      workspace: "prod"
+      workspace: "default"
+    secrets: inherit
 #     secrets:
 #       GH_PERSONAL_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }} 
