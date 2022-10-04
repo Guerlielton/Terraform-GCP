@@ -4,9 +4,10 @@ on: workflow_dispatch
   
 jobs:
   terraform:
-    uses: "Guerlielton/cicd_centralizado/.github/workflows/terraform_executa_modulo_aws.yaml@feat/terraform-download-private-modules"
+    uses: "Guerlielton/cicd_centralizado/.github/workflows/terraform.yaml@feat/terraform-download-private-modules"
     with:
-      aws_region: "us-east-1"
-      tf_workspace: "default"
-    secrets:
-      GH_PERSONAL_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }} 
+      plan: true
+      apply: true
+      workspace: "prod"
+#     secrets:
+#       GH_PERSONAL_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }} 
